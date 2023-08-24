@@ -408,9 +408,7 @@
 }
 
 @media (max-width: 996px) and (min-width:412px) {
-    .parking-space-div {
-        /*flex-direction:column;*/
-    }
+    
 
     .modal {
         width: 404px;
@@ -422,9 +420,7 @@
 }
 
 @media (max-width: 412px) {
-    .parking-space-div {
-        /*flex-direction:column;*/
-    }
+    
 
     .welcome-text {
         display: none;
