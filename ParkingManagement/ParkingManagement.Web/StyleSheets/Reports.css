@@ -1,0 +1,75 @@
+﻿
+#reportTable {
+    margin-top:20px;
+    width: 90%;
+    margin-left:5%;
+    display: table;
+    border:1px solid black;
+    margin-bottom:5%;
+}
+
+#reportTableCaption {
+    display: table-caption;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+
+#reportTableHeader {
+    display: table-header-group;
+    background-color: #dbdbdb;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.table-header-cell {
+    display: table-cell;
+    padding: 10px;
+    /*text-align: justify;*/
+    border-bottom: 1px solid black;
+}
+
+#reportTableBody {
+    display: table-row-group;
+    background-color: #fbfbfb;
+}
+
+.report-table-row {
+    display: table-row;
+    font-size: 18px;
+}
+.zone-column
+{
+    font-size:22px;
+}
+.table-body-cell {
+    display: table-cell;
+    padding:10px;
+}
+.report-date-input{
+    width:150px;
+    /*padding:5px;*/
+    border-radius:5px;
+    font-size:medium;
+}
+.report-date-label{
+    font-size:20px;
+    margin-left:5%;
+    padding-top:10px;
+}
+.extract-pdf-btn {
+    position: absolute;
+    right: 2%;
+    /*font-size: 16px;*/
+    padding: 7px;
+    border-radius: 15px;
+    background-color: #183343;
+    color: white;
+}
+.extract-pdf-btn:hover{
+    cursor:pointer;
+}
+.no-data-table-text{
+    margin-left:5%;
+}

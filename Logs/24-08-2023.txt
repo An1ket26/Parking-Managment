@@ -1,0 +1,192 @@
+24-08-2023 10:22:21
+==============================================================
+Current UserId = 2
+Thread was being aborted.
+
+ine 122System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 122
+
+==============================================================
+
+==============================================================
+24-08-2023 11:20:06
+Current UserId = 1
+Vehicle With Same Registration no Already Parked
+
+line 83
+System.Exception: Vehicle With Same Registration no Already Parked
+   at ParkingManagement.DataAccess.VehicleParkingData.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 159
+   at ParkingManagement.Business.VehicleParkingBusiness.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\VehicleParkingBusiness.cs:line 16
+   at ParkingManagement.Web.Dashboard.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 83
+==============================================================
+
+==============================================================
+24-08-2023 11:26:44
+Current UserId = 2
+Thread was being aborted.
+
+ine 121
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 121
+==============================================================
+
+==============================================================
+24-08-2023 11:43:32
+Current UserId = 1
+Vehicle With Same Registration no Already Parked
+
+line 82
+System.Exception: Vehicle With Same Registration no Already Parked
+   at ParkingManagement.DataAccess.VehicleParkingData.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 159
+   at ParkingManagement.Business.VehicleParkingBusiness.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\VehicleParkingBusiness.cs:line 16
+   at ParkingManagement.Web.Dashboard.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 82
+==============================================================
+
+==============================================================
+24-08-2023 11:50:39
+Current UserId = 1
+The wait completed due to an abandoned mutex.
+
+line 82
+System.Threading.AbandonedMutexException: The wait completed due to an abandoned mutex.
+   at System.Threading.WaitHandle.ThrowAbandonedMutexException()
+   at System.Threading.WaitHandle.InternalWaitOne(SafeHandle waitableSafeHandle, Int64 millisecondsTimeout, Boolean hasThreadAffinity, Boolean exitContext)
+   at System.Threading.WaitHandle.WaitOne(Int32 millisecondsTimeout, Boolean exitContext)
+   at ParkingManagement.DataAccess.VehicleParkingData.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 146
+   at ParkingManagement.Business.VehicleParkingBusiness.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\VehicleParkingBusiness.cs:line 16
+   at ParkingManagement.Web.Dashboard.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 82
+==============================================================
+
+==============================================================
+24-08-2023 11:53:26
+Current UserId = 1
+The wait completed due to an abandoned mutex.
+
+line 82
+System.Threading.AbandonedMutexException: The wait completed due to an abandoned mutex.
+   at System.Threading.WaitHandle.ThrowAbandonedMutexException()
+   at System.Threading.WaitHandle.InternalWaitOne(SafeHandle waitableSafeHandle, Int64 millisecondsTimeout, Boolean hasThreadAffinity, Boolean exitContext)
+   at System.Threading.WaitHandle.WaitOne(Int32 millisecondsTimeout, Boolean exitContext)
+   at ParkingManagement.DataAccess.VehicleParkingData.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 146
+   at ParkingManagement.Business.VehicleParkingBusiness.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\VehicleParkingBusiness.cs:line 16
+   at ParkingManagement.Web.Dashboard.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 82
+==============================================================
+
+==============================================================
+24-08-2023 11:56:07
+Current UserId = 2
+Thread was being aborted.
+
+ine 121
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 121
+==============================================================
+
+==============================================================
+24-08-2023 11:56:39
+Current UserId = 1
+The wait completed due to an abandoned mutex.
+
+line 82
+System.Threading.AbandonedMutexException: The wait completed due to an abandoned mutex.
+   at System.Threading.WaitHandle.ThrowAbandonedMutexException()
+   at System.Threading.WaitHandle.InternalWaitOne(SafeHandle waitableSafeHandle, Int64 millisecondsTimeout, Boolean hasThreadAffinity, Boolean exitContext)
+   at System.Threading.WaitHandle.WaitOne(Int32 millisecondsTimeout, Boolean exitContext)
+   at ParkingManagement.DataAccess.VehicleParkingData.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 146
+   at ParkingManagement.Business.VehicleParkingBusiness.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\VehicleParkingBusiness.cs:line 16
+   at ParkingManagement.Web.Dashboard.SetNewVehicleBookingDetails(VehicleParkingModel vehicleParkingModel) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 82
+==============================================================
+
+==============================================================
+24-08-2023 12:12:03
+Current UserId = 2
+Thread was being aborted.
+
+ine 121
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 121
+==============================================================
+
+==============================================================
+24-08-2023 14:19:45
+Current UserId = 1
+Unknown web method dashboard.aspx/CheckIfUserIsBookingAgent.
+Parameter name: methodName
+
+nously)
+System.ArgumentException: Unknown web method dashboard.aspx/CheckIfUserIsBookingAgent.
+Parameter name: methodName
+   at System.Web.Script.Services.WebServiceData.GetMethodData(String methodName)
+   at System.Web.Handlers.ScriptModule.OnPostAcquireRequestState(Object sender, EventArgs eventArgs)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+24-08-2023 14:19:46
+Current UserId = 1
+Unknown web method dashboard.aspx/GetUserName.
+Parameter name: methodName
+
+nously)
+System.ArgumentException: Unknown web method dashboard.aspx/GetUserName.
+Parameter name: methodName
+   at System.Web.Script.Services.WebServiceData.GetMethodData(String methodName)
+   at System.Web.Handlers.ScriptModule.OnPostAcquireRequestState(Object sender, EventArgs eventArgs)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+24-08-2023 14:19:46
+Current UserId = 1
+Unknown web method dashboard.aspx/GetDetailsOfAllZones.
+Parameter name: methodName
+
+nously)
+System.ArgumentException: Unknown web method dashboard.aspx/GetDetailsOfAllZones.
+Parameter name: methodName
+   at System.Web.Script.Services.WebServiceData.GetMethodData(String methodName)
+   at System.Web.Handlers.ScriptModule.OnPostAcquireRequestState(Object sender, EventArgs eventArgs)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+24-08-2023 14:38:26
+Current UserId = 0
+Trying to access data without login
+
+ine 169
+System.Exception: Trying to access data without login
+   at ParkingManagement.Web.Dashboard.GetDetailsOfAllZones() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 169
+==============================================================
+
+==============================================================
+24-08-2023 15:55:52
+Current UserId = 2
+Thread was being aborted.
+
+ine 121
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 121
+==============================================================
+

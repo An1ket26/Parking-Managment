@@ -1,0 +1,323 @@
+21-08-2023 09:50:01
+==============================================================
+Current UserId = 1
+Input string was not in a correct format.
+
+line 29System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 29
+
+==============================================================
+
+==============================================================
+21-08-2023 09:50:21
+Current UserId = 1
+Input string was not in a correct format.
+
+line 29
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 29
+==============================================================
+
+==============================================================
+21-08-2023 09:55:38
+Current UserId = 1
+Input string was not in a correct format.
+
+line 29
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 29
+==============================================================
+
+==============================================================
+21-08-2023 10:00:09
+Current UserId = 1
+Value cannot be null.
+Parameter name: String
+
+line 29
+System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 29
+==============================================================
+
+==============================================================
+21-08-2023 10:21:52
+Current UserId = 2
+Thread was being aborted.
+
+line 85
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 85
+==============================================================
+
+==============================================================
+21-08-2023 10:24:55
+Current UserId = 2
+Thread was being aborted.
+
+line 85
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 85
+==============================================================
+
+==============================================================
+21-08-2023 10:25:07
+Current UserId = 2
+Thread was being aborted.
+
+line 85
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 85
+==============================================================
+
+==============================================================
+21-08-2023 10:25:44
+Current UserId = 2
+Thread was being aborted.
+
+line 85
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 85
+==============================================================
+
+==============================================================
+21-08-2023 10:26:49
+Current UserId = 2
+Thread was being aborted.
+
+line 85
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 85
+==============================================================
+
+==============================================================
+21-08-2023 10:27:09
+Current UserId = 2
+Thread was being aborted.
+
+line 85
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 85
+==============================================================
+
+==============================================================
+21-08-2023 10:29:48
+Current UserId = 2
+Thread was being aborted.
+
+line 97
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 97
+==============================================================
+
+==============================================================
+21-08-2023 10:30:38
+Current UserId = 2
+Thread was being aborted.
+
+line 97
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 97
+==============================================================
+
+==============================================================
+21-08-2023 10:31:21
+Current UserId = 2
+Thread was being aborted.
+
+line 97
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 97
+==============================================================
+==============================================================
+21-08-2023 13:18:56
+Current UserId = 2
+Thread was being aborted.
+
+line 98
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 98
+==============================================================
+
+==============================================================
+21-08-2023 13:57:59
+Current UserId = 2
+other user is trying to use Release Slot feature
+
+line 50
+System.Exception: other user is trying to use Release Slot feature
+   at ParkingManagement.Web.Dashboard.InitializeApplication() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 50
+==============================================================
+
+==============================================================
+21-08-2023 14:35:05
+Current UserId = 2
+Not Authorized to extract pdf
+
+line 31
+System.Exception: Not Authorized to extract pdf
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 31
+==============================================================
+
+==============================================================
+21-08-2023 14:35:18
+Current UserId = 2
+Not Authorized to extract pdf
+
+line 31
+System.Exception: Not Authorized to extract pdf
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 31
+==============================================================
+
+==============================================================
+21-08-2023 14:37:26
+Current UserId = 2
+Not Authorized to extract pdf
+
+line 31
+System.Exception: Not Authorized to extract pdf
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 31
+==============================================================
+
+==============================================================
+21-08-2023 14:37:44
+Current UserId = 2
+Thread was being aborted.
+
+ine 101
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 101
+==============================================================
+
+==============================================================
+21-08-2023 14:38:02
+Current UserId = 2
+Thread was being aborted.
+
+ine 101
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 101
+==============================================================
+
+==============================================================
+21-08-2023 14:38:51
+Current UserId = 2
+Thread was being aborted.
+
+ine 101
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 101
+==============================================================
+
+==============================================================
+21-08-2023 14:39:14
+Current UserId = 2
+Thread was being aborted.
+
+ine 101
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 101
+==============================================================
+
+==============================================================
+21-08-2023 14:40:41
+Current UserId = 2
+Thread was being aborted.
+
+ine 101
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 101
+==============================================================
+
+==============================================================
+21-08-2023 14:42:51
+Current UserId = 2
+Thread was being aborted.
+
+ine 101
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 101
+==============================================================
+
+==============================================================
+21-08-2023 14:45:13
+Current UserId = 2
+Thread was being aborted.
+
+ine 101
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 101
+==============================================================
+
+==============================================================
+21-08-2023 15:18:36
+Current UserId = 2
+Thread was being aborted.
+
+ine 101
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 101
+==============================================================
+

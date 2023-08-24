@@ -1,0 +1,140 @@
+﻿* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container-div{
+    margin-top:5%;
+    width:90%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:6%;
+}
+
+.login-form {
+    background-color:#fbfbfb;
+    width: 450px;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 350px;
+    box-shadow: 5px 10px #888888;
+}
+
+
+.login-header {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputs-field-div{
+    padding:10px 0px;
+}
+.inputs-field {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 270px;
+    height: 35px;
+}
+
+.login-footer {
+    padding: 20px;
+}
+.login-btn {
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 37%;
+    background-color: #31f531;
+}
+.login-btn:hover{
+    cursor:pointer;
+    background-color:green;
+}
+
+.heading-text {
+    margin-top: 2%;
+}
+
+.modal-container-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.error-modal {
+    width: 550px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.error-modal-title {
+    font-size: 32px;
+    color: red;
+    text-decoration: underline;
+}
+
+.error-modal-text {
+    font-size: 18px;
+    padding: 30px 0px;
+}
+
+.error-modal-btn {
+    font-size: 18px;
+    padding: 5px;
+    width: 70px;
+    background-color: blue;
+    border-radius: 10px;
+    border: 1px solid black;
+    color:white;
+}
+
+    .error-modal-btn:hover {
+        cursor: pointer;
+    }
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.loading-spinner {
+    margin-left: 48%;
+    margin-top: 18%;
+    width: 50px;
+    height: 50px;
+}

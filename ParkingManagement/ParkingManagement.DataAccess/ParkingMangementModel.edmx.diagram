@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="285fd221967c453c8f97954a825a380e" Name="Diagram1">
+        <EntityTypeShape EntityType="ParkingManagementModel.Parking_Space" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkingManagementModel.Parking_Zone" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkingManagementModel.Roles" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkingManagementModel.User" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkingManagementModel.User_Roles" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkingManagementModel.Vehicle_Parking" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="ParkingManagementModel.FK_Parking_Space_Parking_Zone" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkingManagementModel.FK_Vehicle_Parking_Parking_Space" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkingManagementModel.FK_Vehicle_Parking_Parking_Zone" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkingManagementModel.FK_User_Roles_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkingManagementModel.FK_User_Roles_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

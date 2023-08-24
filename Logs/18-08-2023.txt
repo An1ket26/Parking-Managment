@@ -1,0 +1,440 @@
+18-08-2023 17:57:26
+==============================================================
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+
+==============================================================
+
+==============================================================
+18-08-2023 17:57:27
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:28
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:29
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:30
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:31
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:32
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:33
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:34
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:35
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:36
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:37
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:38
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:39
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:40
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:41
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:42
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:43
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:44
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:45
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:47
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:48
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:49
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:50
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:51
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:52
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:53
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:54
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:55
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:56
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:57
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:57:58
+Current UserId = 1
+Input string was not in a correct format.
+
+line 25
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:59:09
+Current UserId = 1
+Value cannot be null.
+Parameter name: String
+
+line 25
+System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:59:19
+Current UserId = 1
+Value cannot be null.
+Parameter name: String
+
+line 25
+System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:59:30
+Current UserId = 1
+Value cannot be null.
+Parameter name: String
+
+line 25
+System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+
+==============================================================
+18-08-2023 17:59:41
+Current UserId = 1
+Value cannot be null.
+Parameter name: String
+
+line 25
+System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 25
+==============================================================
+

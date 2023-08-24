@@ -1,0 +1,576 @@
+23-08-2023 10:33:17
+==============================================================
+Current UserId = 2
+Thread was being aborted.
+
+ine 116System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 116
+
+==============================================================
+
+==============================================================
+23-08-2023 10:34:30
+Current UserId = 2
+Thread was being aborted.
+
+ine 117
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 117
+==============================================================
+
+==============================================================
+23-08-2023 10:35:07
+Current UserId = 2
+Thread was being aborted.
+
+ine 117
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 117
+==============================================================
+
+==============================================================
+23-08-2023 10:41:09
+Current UserId = 2
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+User Id does not exist to check booking Agent
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Exception: User Id does not exist to check booking Agent
+   at ParkingManagement.DataAccess.UserData.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\UserData.cs:line 37
+   at ParkingManagement.Business.UserBusiness.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\UserBusiness.cs:line 19
+   at ParkingManagement.Web.Auth.IsUserBookingAgent() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 42
+   at ParkingManagement.Web.Auth.Page_Init(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 19
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+23-08-2023 10:41:18
+Current UserId = 1
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+User Id does not exist to check booking Agent
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Exception: User Id does not exist to check booking Agent
+   at ParkingManagement.DataAccess.UserData.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\UserData.cs:line 37
+   at ParkingManagement.Business.UserBusiness.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\UserBusiness.cs:line 19
+   at ParkingManagement.Web.Auth.IsUserBookingAgent() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 42
+   at ParkingManagement.Web.Dashboard.Page_Load(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 21
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+23-08-2023 10:41:34
+Current UserId = 1
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+User Id does not exist to check booking Agent
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Exception: User Id does not exist to check booking Agent
+   at ParkingManagement.DataAccess.UserData.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\UserData.cs:line 37
+   at ParkingManagement.Business.UserBusiness.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\UserBusiness.cs:line 19
+   at ParkingManagement.Web.Auth.IsUserBookingAgent() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 42
+   at ParkingManagement.Web.Dashboard.Page_Load(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 21
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+23-08-2023 10:46:20
+Current UserId = 1
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+User Id does not exist to check booking Agent
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Exception: User Id does not exist to check booking Agent
+   at ParkingManagement.DataAccess.UserData.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\UserData.cs:line 37
+   at ParkingManagement.Business.UserBusiness.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\UserBusiness.cs:line 19
+   at ParkingManagement.Web.Auth.IsUserBookingAgent() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 42
+   at ParkingManagement.Web.Dashboard.Page_Load(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 21
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+23-08-2023 10:46:41
+Current UserId = 1
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+User Id does not exist to check booking Agent
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Exception: User Id does not exist to check booking Agent
+   at ParkingManagement.DataAccess.UserData.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\UserData.cs:line 37
+   at ParkingManagement.Business.UserBusiness.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\UserBusiness.cs:line 19
+   at ParkingManagement.Web.Auth.IsUserBookingAgent() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 42
+   at ParkingManagement.Web.Dashboard.Page_Load(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 21
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+23-08-2023 10:47:24
+Current UserId = 1
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+User Id does not exist to check booking Agent
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Exception: User Id does not exist to check booking Agent
+   at ParkingManagement.DataAccess.UserData.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\UserData.cs:line 37
+   at ParkingManagement.Business.UserBusiness.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\UserBusiness.cs:line 19
+   at ParkingManagement.Web.Auth.IsUserBookingAgent() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 42
+   at ParkingManagement.Web.Dashboard.Page_Load(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 21
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+23-08-2023 10:48:29
+Current UserId = 1
+User Id does not exist
+
+ine 171
+System.Exception: User Id does not exist
+   at ParkingManagement.DataAccess.UserData.GetUserName(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\UserData.cs:line 59
+   at ParkingManagement.Business.UserBusiness.GetUserName(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\UserBusiness.cs:line 24
+   at ParkingManagement.Web.Dashboard.GetUserName() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 171
+==============================================================
+
+==============================================================
+23-08-2023 10:51:49
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Spce Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:52:05
+Current UserId = 1
+Parking Spce Id does not exist
+
+line 40
+System.Exception: Parking Spce Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:52:17
+Current UserId = 1
+Parking Spce Id does not exist
+
+line 40
+System.Exception: Parking Spce Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:52:26
+Current UserId = 1
+Parking Spce Id does not exist
+
+line 40
+System.Exception: Parking Spce Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:52:47
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:52:47
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:52:56
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:53:02
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:53:11
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:53:21
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:53:31
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:53:41
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:53:51
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:54:01
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:54:11
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:54:21
+Current UserId = 1
+Parking Space Id does not exist
+
+line 40
+System.Exception: Parking Space Id does not exist
+   at ParkingManagement.DataAccess.VehicleParkingData.IsAnyVehiclePresentInSpace(Int32 parkingSpaceId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\VehicleParkingData.cs:line 87
+   at ParkingManagement.DataAccess.ParkingSpaceData.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\ParkingSpaceData.cs:line 30
+   at ParkingManagement.Business.ParkingSpaceBusiness.GetParkingSpaceDetailsByZone(Int32 zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\ParkingSpaceBusiness.cs:line 15
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 40
+==============================================================
+
+==============================================================
+23-08-2023 10:57:35
+Current UserId = 2
+Thread was being aborted.
+
+ine 117
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 117
+==============================================================
+
+==============================================================
+23-08-2023 12:32:52
+Current UserId = 1
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Illegal characters in path.
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.ArgumentException: Illegal characters in path.
+   at System.IO.LongPathHelper.Normalize(String path, UInt32 maxPathLength, Boolean checkInvalidCharacters, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.Hosting.HostingEnvironment.MapPath(VirtualPath virtualPath)
+   at Fingerprint.RenameStaticFile(String path) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 200
+   at ASP.dashboard_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx:line 62
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+23-08-2023 12:33:04
+Current UserId = 1
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Illegal characters in path.
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.ArgumentException: Illegal characters in path.
+   at System.IO.LongPathHelper.Normalize(String path, UInt32 maxPathLength, Boolean checkInvalidCharacters, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.Hosting.HostingEnvironment.MapPath(VirtualPath virtualPath)
+   at Fingerprint.RenameStaticFile(String path) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 200
+   at ASP.dashboard_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx:line 62
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+23-08-2023 12:34:37
+Current UserId = 1
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Illegal characters in path.
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.ArgumentException: Illegal characters in path.
+   at System.IO.LongPathHelper.Normalize(String path, UInt32 maxPathLength, Boolean checkInvalidCharacters, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.Hosting.HostingEnvironment.MapPath(VirtualPath virtualPath)
+   at ParkingManagement.Web.Dashboard.RenameStaticFile(String path) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 195
+   at ASP.dashboard_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx:line 62
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+23-08-2023 12:37:45
+Current UserId = 1
+Illegal characters in path.
+
+ine 198
+System.ArgumentException: Illegal characters in path.
+   at System.IO.LongPathHelper.Normalize(String path, UInt32 maxPathLength, Boolean checkInvalidCharacters, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.Hosting.HostingEnvironment.MapPath(VirtualPath virtualPath)
+   at ParkingManagement.Web.Dashboard.RenameStaticFile(String path) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 198
+==============================================================
+
+==============================================================
+23-08-2023 12:37:58
+Current UserId = 1
+The relative virtual path '~Scripts/Dashboard.js' is not allowed here.
+
+ine 198
+System.ArgumentException: The relative virtual path '~Scripts/Dashboard.js' is not allowed here.
+   at System.Web.VirtualPath.FailIfRelativePath()
+   at System.Web.Hosting.HostingEnvironment.MapPathActual(VirtualPath virtualPath, Boolean permitNull)
+   at System.Web.Hosting.HostingEnvironment.MapPath(VirtualPath virtualPath)
+   at ParkingManagement.Web.Dashboard.RenameStaticFile(String path) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 198
+==============================================================
+
+==============================================================
+23-08-2023 16:54:08
+Current UserId = 2
+Thread was being aborted.
+
+ine 122
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 122
+==============================================================
+

@@ -1,0 +1,56 @@
+22-08-2023 11:10:46
+==============================================================
+Current UserId = 2
+Thread was being aborted.
+
+ine 101System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 101
+
+==============================================================
+
+==============================================================
+22-08-2023 11:16:22
+Current UserId = 2
+No Date Selected
+
+line 36
+System.Exception: No Date Selected
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 36
+==============================================================
+
+==============================================================
+22-08-2023 11:16:47
+Current UserId = 2
+No Date Selected
+
+line 36
+System.Exception: No Date Selected
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 36
+==============================================================
+
+==============================================================
+22-08-2023 11:16:58
+Current UserId = 2
+No Date Selected
+
+line 36
+System.Exception: No Date Selected
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 36
+==============================================================
+
+==============================================================
+22-08-2023 18:48:19
+Current UserId = 2
+Thread was being aborted.
+
+ine 105
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 105
+==============================================================
+
