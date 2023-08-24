@@ -19,9 +19,9 @@ namespace ParkingManagement.DataAccess
         public static int ValidateUser(UserModel userLoginDetails)
         {
             int userId = 0;
-            using(var dbContext = new ParkingManagementEntities())
+            using (var dbContext = new ParkingManagementEntities())
             {
-                if(dbContext.User.Where(i=>i.Password== userLoginDetails.Password && i.Email == userLoginDetails.Email).Any())
+                if (dbContext.User.Where(i => i.Password == userLoginDetails.Password && i.Email == userLoginDetails.Email).Any())
                 {
                     userId = dbContext.User.
                         Where(i => i.Password == userLoginDetails.Password && i.Email == userLoginDetails.Email).
@@ -40,16 +40,16 @@ namespace ParkingManagement.DataAccess
         public static bool IsUserBookingAgent(int userId)
         {
             bool flag = false;
-            using(var dbContext=new ParkingManagementEntities())
+            using (var dbContext = new ParkingManagementEntities())
             {
                 if (!dbContext.User.Where(i => i.User_Id == userId).Any())
                 {
                     throw new Exception("User Id does not exist to check booking Agent");
                 }
                 var roleIdList = dbContext.User_Roles.Where(i => i.User_Id == userId).Select(i => i.Role_Id);
-                foreach(var roleid in roleIdList)
+                foreach (var roleid in roleIdList)
                 {
-                    if(dbContext.Roles.Where(i => i.Role_Id == roleid).Select(i => i.Role_Name).Single().ToString()== "Booking_Counter_Agent")
+                    if (dbContext.Roles.Where(i => i.Role_Id == roleid).Select(i => i.Role_Name).Single().ToString() == "Booking_Counter_Agent")
                     {
                         flag = true;
                         break;
@@ -66,14 +66,14 @@ namespace ParkingManagement.DataAccess
         /// <exception cref="Exception"></exception>
         public static string GetUserName(int userId)
         {
-            string userName= "";
-            using(var dbContext=new ParkingManagementEntities())
+            string userName = "";
+            using (var dbContext = new ParkingManagementEntities())
             {
                 if (!dbContext.User.Where(i => i.User_Id == userId).Any())
                 {
                     throw new Exception("User Id does not exist");
                 }
-                userName = dbContext.User.Where(i=>i.User_Id==userId).Select(i=>i.Name).SingleOrDefault();
+                userName = dbContext.User.Where(i => i.User_Id == userId).Select(i => i.Name).SingleOrDefault();
             }
             return userName;
         }

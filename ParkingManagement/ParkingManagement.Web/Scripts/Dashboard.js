@@ -4,7 +4,7 @@
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    var tab="";
+    var tab = "";
     /*It Checks the query string of the page and finds whether it is reports tab or dashboard tab */
     if (urlParams.get('tab') !== null) {
         tab = urlParams.get('tab');
@@ -12,13 +12,13 @@
             $("#reportsDiv").addClass("display-none")
             $("#zonesDiv").removeClass("display-none")
             document.title = "DashBoard";
-      
+
 
         } else if (tab === "reports") {
             $("#reportsDiv").removeClass("display-none")
             $("#zonesDiv").addClass("display-none")
             document.title = "Reports"
-            
+
         }
     }
     else {
@@ -118,7 +118,7 @@
 
     function ShowBottomNavbar() {
         if (isBookingAgent == "false") {
-            $("#bottomNavbar").append(`<button id="navbarDashboardBtn" class="nav-links ${tab === `dashboard` ?`navbarActiveBtns`:``}">DashBoard</button>
+            $("#bottomNavbar").append(`<button id="navbarDashboardBtn" class="nav-links ${tab === `dashboard` ? `navbarActiveBtns` : ``}">DashBoard</button>
             <button id="navbarReportBtn" class="nav-links ${tab === `reports` ? `navbarActiveBtns` : ``}">Reports</button>`);
             $("#initializeBtn").addClass("display-none");
         }
@@ -157,8 +157,8 @@
 
     function createFreeParkingSpaceTemplate(parkingSlot) {
         var template = `<div id="parkingSlotDiv" class="parking-slot-div free-slot">
-        <div class="parking-slot-div-heading">
-                            <p><u>${parkingSlot.Parking_Space_Title}</u></p>
+                            <div class="parking-slot-div-heading">
+                                <p><u>${parkingSlot.Parking_Space_Title}</u></p>
                            </div>
                             ${isBookingAgent == `true` ? `<button id="${parkingSlot.Parking_Space_Id}btn" slotId="${parkingSlot.Parking_Space_Id}" 
                             zoneId="${parkingSlot.Parking_Zone_Id}" slotTitle="${parkingSlot.Parking_Space_Title}" class="book-slot-btn">Book</button>` : ``}
@@ -172,66 +172,67 @@
         var AmOrPm = hours >= 12 ? 'pm' : 'am';
         hours = (hours % 12) || 12;
         var minutes = time.split('-')[1];
-        var finalTime =hours + ":" + minutes + " " + AmOrPm;
-       
+        var finalTime = hours + ":" + minutes + " " + AmOrPm;
+
 
         var template = `<div id="parkingSlotDiv" class="parking-slot-div booked-slot">
-         <div class="parking-slot-div-heading">
-         
+                         <div class="parking-slot-div-heading">
                             <p><u>${parkingSlot.Parking_Space_Title}</u></p>  </div><div class="parking-slot-div-body">
                             <p class="parking-slot-div-register-no"> Register No : ${parkingSlot.BookedRegistrationNumber}</p>
                             <p class="parking-slot-div-register-no">Release Time : ${date} ${finalTime}</p>
                             ${isBookingAgent == `true` ? `<button id="${parkingSlot.Parking_Space_Id}btn" slotId="${parkingSlot.Parking_Space_Id}" 
                             zoneId="${parkingSlot.Parking_Zone_Id}" slotTitle="${parkingSlot.Parking_Space_Title}" bookedId=${parkingSlot.BookedId} registrationNo="${parkingSlot.BookedRegistrationNumber}" class="release-slot-btn">Release</button>` : ``}
-                        </div></div>`;
+                        </div>
+                       </div>`;
         return template;
     }
     function createBookModalTemplate(zoneId, slotId, btnId) {
         var minDate = new Date().toISOString().slice(0, new Date().toISOString().lastIndexOf(":"));
-        
+
         return `<div class="modal">
-            <div class="book_modal_title"><u>Book Slot</u></div>
+                    <div class="book_modal_title"><u>Book Slot</u></div>
            
-            <div class="book_modal_content">  
-                <div class="book-modal-label-container"><label for="RegistrationNoInp">Registration No :</label></div>
-                <input type="text" id="RegistrationNoInp${slotId}" class="modal-register-input"/><br />
-                <div class="book-modal-label-container"><label for="">Duration :</label></div>
-                <input  id="releaseTime${slotId}" class="modal-datetime-input" type="datetime-local" min="${minDate}"/>
-            </div><br />
-            <div class="book-modal-buttons-container">
-            <button id="bookModalSubmitBtn" zoneId=${zoneId} slotId=${slotId} registerNoId="RegistrationNoInp${slotId}"
-            releaseTimeId="releaseTime${slotId}" btnId="${btnId}" class="book-slot-modal-btn">Book Slot</button>
-             <button id="bookModalCancelBtn" class="cancel-book-slot-modal-btn">Cancel</button></div>
-        </div>`;
+                    <div class="book_modal_content">  
+                        <div class="book-modal-label-container"><label for="RegistrationNoInp">Registration No :</label></div>
+                        <input type="text" id="RegistrationNoInp${slotId}" class="modal-register-input"/><br />
+                        <div class="book-modal-label-container"><label for="">Duration :</label></div>
+                        <input  id="releaseTime${slotId}" class="modal-datetime-input" type="datetime-local" min="${minDate}"/>
+                    </div><br />
+                    <div class="book-modal-buttons-container">
+                        <button id="bookModalSubmitBtn" zoneId=${zoneId} slotId=${slotId} registerNoId="RegistrationNoInp${slotId}"
+                        releaseTimeId="releaseTime${slotId}" btnId="${btnId}" class="book-slot-modal-btn">Book Slot</button>
+                        <button id="bookModalCancelBtn" class="cancel-book-slot-modal-btn">Cancel</button>
+                     </div>
+                </div>`;
     }
 
     function createReleaseModalTemplate(data) {
-       
+
         return `<div class="modal">
-            <div class="release_modal_title">Are you sure you want to Release Slot?</div>
-          
-            <div class="release-modal-buttons-container">
-            <button id="releaseModalYesBtn" bookedId="${data.vehicleParkingId}" class="book-slot-modal-btn">Yes</button>
-             <button id="bookModalCancelBtn" class="cancel-book-slot-modal-btn">No</button></div>
-        </div>`;
+                    <div class="release_modal_title">Are you sure you want to Release Slot?</div>
+                    <div class="release-modal-buttons-container">
+                        <button id="releaseModalYesBtn" bookedId="${data.vehicleParkingId}" class="book-slot-modal-btn">Yes</button>
+                        <button id="bookModalCancelBtn" class="cancel-book-slot-modal-btn">No</button>
+                    </div>
+                </div>`;
     }
     function createLogoutModalTemplate() {
         return `<div class="modal">
-            <div class="release_modal_title">Are you sure you want to Log Out?</div>
-          
-            <div class="release-modal-buttons-container">
-            <button id="logoutYesBtn" class="book-slot-modal-btn">Yes</button>
-             <button id="bookModalCancelBtn" class="cancel-book-slot-modal-btn">No</button></div>
-        </div>`;
+                    <div class="release_modal_title">Are you sure you want to Log Out?</div>
+                    <div class="release-modal-buttons-container">
+                        <button id="logoutYesBtn" class="book-slot-modal-btn">Yes</button>
+                        <button id="bookModalCancelBtn" class="cancel-book-slot-modal-btn">No</button>
+                    </div>
+                </div>`;
     }
 
     function createInitializeModalTemplate() {
         return `<div class="error-modal">
-        <p class="initialize-modal-title">Confirm</p>
-          <p class="initialize-modal_text">Are You Sure Want To Clear All Data and Initialize ?</p>
-          <button class="initialize-modal-yes-btn " id="modalInitializeYesBtn">Yes</button>
-          <button class="initialize-modal-no-btn" id="modalNoBtn">No</button>
-        </div >`;
+                    <p class="initialize-modal-title">Confirm</p>
+                    <p class="initialize-modal_text">Are You Sure Want To Clear All Data and Initialize ?</p>
+                    <button class="initialize-modal-yes-btn " id="modalInitializeYesBtn">Yes</button>
+                    <button class="initialize-modal-no-btn" id="modalNoBtn">No</button>
+                </div >`;
     }
 
     function populateParkingSpaceDiv(parkingSlots) {
@@ -272,7 +273,7 @@
         });
     }
     function getParkingSpaceDetailsByZoneWithoutReload(zoneId) {
-       
+
         $.ajax({
             type: "POST",
             url: 'Dashboard.aspx/GetParkingSpaceDetailsByZone',
@@ -280,17 +281,17 @@
             contentType: "application/json; charset=utf-8",
             success: function (data) {
                 if (data.d == null) {
-                    
+
                     showErrorModal("something went wrong please try again")
                 } else {
 
                     populateParkingSpaceDiv(data.d);
-                    
+
                 }
 
             },
             failure: function (response) {
-                
+
                 showErrorModal("something went wrong please try again")
             }
         });
@@ -298,17 +299,17 @@
 
     function createErrorModal(message) {
         return `<div class="error-modal">
-        <p class="error-modal-title">Error</p>
-          <p class="error-modal-text">${message}</p>
-          <button class="error-modal-btn" id="cancelErrorModalBtn">Ok</button>
-                 </div >`;
+                  <p class="error-modal-title">Error</p>
+                  <p class="error-modal-text">${message}</p>
+                  <button class="error-modal-btn" id="cancelErrorModalBtn">Ok</button>
+                </div >`;
     }
     function createSuccessModal(message) {
         return `<div class="error-modal">
-        <p class="success-modal-title">Success</p>
-          <p class="error-modal-text">${message}</p>
-          <button class="error-modal-btn" id="cancelErrorModalBtn">Ok</button>
-                 </div >`;
+                  <p class="success-modal-title">Success</p>
+                  <p class="error-modal-text">${message}</p>
+                  <button class="error-modal-btn" id="cancelErrorModalBtn">Ok</button>
+                </div >`;
     }
 
     function createLoadingModal() {
@@ -317,7 +318,7 @@
 
     $("#zoneDrpDwn").on('change', function () {
         var zoneId = $(this).val();
-        if (zoneId!=0)
+        if (zoneId != 0)
             getParkingSpaceDetailsByZone(zoneId);
     })
     $("#initializeBtn").on('click', function () {
@@ -344,7 +345,7 @@
                     getAllZones();
                     showSuccessModal("Data initialized successfully!!");
                     $("#parkingSpaceDiv").html("");
-                    
+
 
                 }
 
@@ -384,7 +385,7 @@
             var slotName = $(this).attr("slotTitle");
             $("#modalContainer").html(createBookModalTemplate(zoneId, slotId, btnId, slotName));
         }
-        $("#modalContainer").css({ "display": "flex","justify-content":"center" });
+        $("#modalContainer").css({ "display": "flex", "justify-content": "center" });
     })
 
     $("#modalContainer").on('click', "#bookModalCancelBtn", function () {
@@ -532,7 +533,7 @@
                 ${parkingSpaceData.NoOfBooking}
             </div>
             <div class="table-body-cell">
-                ${parkingSpaceData.IsCurrentlyVehicleparked==="YES"?`1`:`0`}
+                ${parkingSpaceData.IsCurrentlyVehicleparked === "YES" ? `1` : `0`}
             </div>
         </div>`;
     }
@@ -593,7 +594,7 @@
         GenerateReport($(this).val());
     })
 
-  
+
 
     function showErrorModal(message) {
         $("#modalContainer2").html("");
@@ -605,7 +606,7 @@
         $("#modalContainer3").html(createSuccessModal(message));
         $("#modalContainer3").css({ "display": "flex", "justify-content": "center" });
     }
-   
+
     function hideErrorModal() {
         $("#modalContainer2").css("display", "none");
     }
@@ -617,15 +618,15 @@
     function hideLoadingBar() {
         $("#modalContainer2").css("display", "none");
     }
-    
+
 
     // to continuosly update data
     setInterval(() => {
         var zoneId = $("#zoneDrpDwn").val();
-        if (zoneId != 0 && zoneId != "" && zoneId!=null) {
+        if (zoneId != 0 && zoneId != "" && zoneId != null) {
             getParkingSpaceDetailsByZoneWithoutReload(zoneId);
         }
-        
+
     }, 10000);
 
 

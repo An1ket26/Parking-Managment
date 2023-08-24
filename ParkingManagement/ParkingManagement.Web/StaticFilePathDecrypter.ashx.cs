@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParkingManagement.Utils;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,13 +8,14 @@ using System.Web;
 namespace ParkingManagement.Web
 {
     /// <summary>
-    /// Summary description for StaticFilePathDecrypter
+    /// Convert the recieved fake path into original path and return the contents.
     /// </summary>
     public class StaticFilePathDecrypter : IHttpHandler
     {
 
         public void ProcessRequest(HttpContext context)
         {
+           
             string path = context.Request.Url.AbsolutePath;
             FileInfo fileInfo = new FileInfo(path);
             string ext=fileInfo.Extension;

@@ -31,11 +31,11 @@ namespace ParkingManagement.DataAccess
             string vehicleRegistrationNumber = "";
             using (var dbContext = new ParkingManagementEntities())
             {
-                if(!dbContext.Vehicle_Parking.Where(i=>i.Parking_Space_Id==parkingSpaceId).Any())
+                if (!dbContext.Vehicle_Parking.Where(i => i.Parking_Space_Id == parkingSpaceId).Any())
                 {
                     throw new Exception("Parking Space Id does not exist");
                 }
-                if (dbContext.Vehicle_Parking.Where(i => i.Parking_Space_Id == parkingSpaceId && i.Actual_Release_Time==null).Select(i => i.Registration_No).Any())
+                if (dbContext.Vehicle_Parking.Where(i => i.Parking_Space_Id == parkingSpaceId && i.Actual_Release_Time == null).Select(i => i.Registration_No).Any())
                 {
                     vehicleRegistrationNumber = dbContext.Vehicle_Parking.
                         Where(i => i.Parking_Space_Id == parkingSpaceId && i.Actual_Release_Time == null).
@@ -121,7 +121,7 @@ namespace ParkingManagement.DataAccess
             string flag = "NO";
             using (var dbContext = new ParkingManagementEntities())
             {
-                if (dbContext.Vehicle_Parking.Where(i => i.Parking_Space_Id == parkingSpaceId && i.Actual_Release_Time==null).Select(i => i.Registration_No).Any())
+                if (dbContext.Vehicle_Parking.Where(i => i.Parking_Space_Id == parkingSpaceId && i.Actual_Release_Time == null).Select(i => i.Registration_No).Any())
                 {
                     flag = "YES";
                 }
@@ -145,31 +145,31 @@ namespace ParkingManagement.DataAccess
         {
             mutex.WaitOne();
             int vehicleParkingId = 0;
-            using(var dbContext = new ParkingManagementEntities())
+            using (var dbContext = new ParkingManagementEntities())
             {
-                if(dbContext.Vehicle_Parking.Where(i=>i.Parking_Space_Id==vehicleParkingModel.Parking_Space_Id && i.Actual_Release_Time == null).Any())
+                if (dbContext.Vehicle_Parking.Where(i => i.Parking_Space_Id == vehicleParkingModel.Parking_Space_Id && i.Actual_Release_Time == null).Any())
                 {
                     //throw exception;
                     mutex.ReleaseMutex();
                     throw new Exception("Parking Space not free to park");
                 }
-                if(dbContext.Vehicle_Parking.Where(i=>i.Registration_No==vehicleParkingModel.Registration_No && i.Actual_Release_Time == null).Any())
+                if (dbContext.Vehicle_Parking.Where(i => i.Registration_No == vehicleParkingModel.Registration_No && i.Actual_Release_Time == null).Any())
                 {
                     mutex.ReleaseMutex();
                     throw new Exception("Vehicle With Same Registration no Already Parked");
                 }
                 Vehicle_Parking obj = new Vehicle_Parking();
-                obj.Parking_Space_Id=vehicleParkingModel.Parking_Space_Id;
+                obj.Parking_Space_Id = vehicleParkingModel.Parking_Space_Id;
                 obj.Parking_Zone_Id = vehicleParkingModel.Parking_Zone_Id;
                 obj.Registration_No = vehicleParkingModel.Registration_No;
                 obj.Booking_Date_Time = DateTime.Now.ToString("yyyy-MM-dd HH-mm");
-                obj.Release_Date_Time=vehicleParkingModel.Release_Date_Time;
+                obj.Release_Date_Time = vehicleParkingModel.Release_Date_Time;
                 dbContext.Vehicle_Parking.Add(obj);
                 dbContext.SaveChanges();
                 vehicleParkingId = obj.Vehicle_Parking_Id;
             }
             mutex.ReleaseMutex();
-            return vehicleParkingId;  
+            return vehicleParkingId;
         }
         /// <summary>
         /// 
@@ -196,11 +196,11 @@ namespace ParkingManagement.DataAccess
                 vehicleParkingModel.Booking_Date_Time = item.Booking_Date_Time;
                 vehicleParkingModel.Release_Date_Time = item.Release_Date_Time;
                 vehicleParkingModel.Registration_No = item.Registration_No;
-                vehicleParkingModel.Vehicle_Parking_Id= item.Vehicle_Parking_Id;
-                
+                vehicleParkingModel.Vehicle_Parking_Id = item.Vehicle_Parking_Id;
+
                 var y = DateTime.ParseExact(item.Release_Date_Time, "yyyy-MM-dd HH-mm", System.Globalization.CultureInfo.InvariantCulture);
                 var x = DateTime.ParseExact(DateTime.Now.ToString("yyyy-MM-dd HH-mm"), "yyyy-MM-dd HH-mm", System.Globalization.CultureInfo.InvariantCulture);
-                vehicleParkingModel.TimeLeft =(y-x).ToString();
+                vehicleParkingModel.TimeLeft = (y - x).ToString();
             }
             return vehicleParkingModel;
         }
@@ -216,15 +216,15 @@ namespace ParkingManagement.DataAccess
         /// <exception cref="Exception"></exception>
         public static void ReleaseVehicleParkingSlot(int vehicleParkingId)
         {
-            
-            using(var dbContext = new ParkingManagementEntities())
+
+            using (var dbContext = new ParkingManagementEntities())
             {
                 if (!dbContext.Vehicle_Parking.Where(i => i.Vehicle_Parking_Id == vehicleParkingId).Any())
                 {
                     throw new Exception("Vehicle Parking Id does not exist");
                 }
-                Vehicle_Parking obj =  dbContext.Vehicle_Parking.Where(i=>i.Vehicle_Parking_Id==vehicleParkingId).FirstOrDefault();
-                obj.Actual_Release_Time= DateTime.Now.ToString("yyyy-MM-dd HH-mm");
+                Vehicle_Parking obj = dbContext.Vehicle_Parking.Where(i => i.Vehicle_Parking_Id == vehicleParkingId).FirstOrDefault();
+                obj.Actual_Release_Time = DateTime.Now.ToString("yyyy-MM-dd HH-mm");
                 dbContext.SaveChanges();
             }
         }
@@ -238,23 +238,23 @@ namespace ParkingManagement.DataAccess
         /// </returns>
         public static List<ReportParkingZoneModel> GenerateReports(string date)
         {
-            List<ReportParkingZoneModel> parkingZoneList = new List<ReportParkingZoneModel>(); 
-            using(var dbContext = new ParkingManagementEntities())
+            List<ReportParkingZoneModel> parkingZoneList = new List<ReportParkingZoneModel>();
+            using (var dbContext = new ParkingManagementEntities())
             {
-                var items = dbContext.Vehicle_Parking.GroupBy(i=>i.Parking_Zone_Id);
-                
+                var items = dbContext.Vehicle_Parking.GroupBy(i => i.Parking_Zone_Id);
+
                 foreach (var item in items)
                 {
                     ReportParkingZoneModel reportParkingZoneModel = new ReportParkingZoneModel();
-                    int zoneId  = item.Key;
+                    int zoneId = item.Key;
                     string zoneName = ParkingZoneData.GetParkingZoneNameById(zoneId);
                     var parkingSpaceGrouplist = item.GroupBy(i => i.Parking_Space_Id);
                     List<ReportParkingSpaceModel> reportParkingSpaceModelList = new List<ReportParkingSpaceModel>();
-                    foreach(var item2 in parkingSpaceGrouplist)
+                    foreach (var item2 in parkingSpaceGrouplist)
                     {
                         ReportParkingSpaceModel reportParkingSpaceModel = new ReportParkingSpaceModel();
                         var parkingSpaceId = item2.Key;
-                        var parkingSpaceName=ParkingSpaceData.GetParkingSpaceNameById(parkingSpaceId);
+                        var parkingSpaceName = ParkingSpaceData.GetParkingSpaceNameById(parkingSpaceId);
                         var countOfOccupiedSpace = 0;
                         var countOfBookedSpace = 0;
                         foreach (var item3 in item2)
@@ -284,7 +284,7 @@ namespace ParkingManagement.DataAccess
                         parkingZoneList.Add(reportParkingZoneModel);
                     }
                 }
-                
+
             }
             return parkingZoneList;
 

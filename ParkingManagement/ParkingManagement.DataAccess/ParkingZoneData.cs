@@ -17,14 +17,14 @@ namespace ParkingManagement.DataAccess
         /// <exception cref="Exception"></exception>
         public static int GetParkingZoneIdByName(string zoneTitle)
         {
-            int zoneId = 0; 
-            using(var dbContext = new ParkingManagementEntities())
+            int zoneId = 0;
+            using (var dbContext = new ParkingManagementEntities())
             {
-                if(!dbContext.Parking_Zone.Where(i => i.Parking_Zone_Title == zoneTitle).Any())
+                if (!dbContext.Parking_Zone.Where(i => i.Parking_Zone_Title == zoneTitle).Any())
                 {
                     throw new Exception("Zone Title does not Exist");
                 }
-                zoneId=dbContext.Parking_Zone.Where(i=>i.Parking_Zone_Title== zoneTitle).Select(i=>i.Parking_Zone_Id).SingleOrDefault();
+                zoneId = dbContext.Parking_Zone.Where(i => i.Parking_Zone_Title == zoneTitle).Select(i => i.Parking_Zone_Id).SingleOrDefault();
             }
             return zoneId;
         }
@@ -40,9 +40,9 @@ namespace ParkingManagement.DataAccess
             using (var dbContext = new ParkingManagementEntities())
             {
 
-                if(!dbContext.Parking_Zone.Where(i => i.Parking_Zone_Id == zoneId).Any())
+                if (!dbContext.Parking_Zone.Where(i => i.Parking_Zone_Id == zoneId).Any())
                 {
-                    throw new Exception("Parking Zone Id Does not Exist where zoneId="+zoneId.ToString());
+                    throw new Exception("Parking Zone Id Does not Exist where zoneId=" + zoneId.ToString());
                 }
                 zoneName = dbContext.Parking_Zone.Where(i => i.Parking_Zone_Id == zoneId).Select(i => i.Parking_Zone_Title).SingleOrDefault();
             }
@@ -56,7 +56,7 @@ namespace ParkingManagement.DataAccess
         /// </returns>
         public static List<ParkingZoneModel> GetDetailsOfAllZones()
         {
-            List <ParkingZoneModel> parkingZoneList = new List <ParkingZoneModel>();    
+            List<ParkingZoneModel> parkingZoneList = new List<ParkingZoneModel>();
             using (var dbContext = new ParkingManagementEntities())
             {
                 var items = dbContext.Parking_Zone;
