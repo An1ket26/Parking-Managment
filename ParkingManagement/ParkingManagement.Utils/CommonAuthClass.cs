@@ -11,7 +11,7 @@ namespace ParkingManagement.Utils
     {
         public static int GetCurrentUserId()
         {
-            if (HttpContext.Current.Session["UserId"] == null)
+            if (HttpContext.Current.Session==null || HttpContext.Current.Session["UserId"] == null)
             {
                 return 0;
             }

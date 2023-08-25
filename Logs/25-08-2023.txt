@@ -48,3 +48,16 @@ System.Exception: Trying to access data without login
    at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 47
 ==============================================================
 
+==============================================================
+25-08-2023 16:26:51
+Current UserId = 0
+Thread was being aborted.
+
+line 46
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.StaticFilePathDecrypter.ProcessRequest(HttpContext context) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\StaticFilePathDecrypter.ashx.cs:line 46
+==============================================================
+

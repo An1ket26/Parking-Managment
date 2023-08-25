@@ -519,7 +519,6 @@
         $("#modalContainer").css({ "display": "flex", "justify-content": "center" });
     })
 
-
     function createReportsTemplate(zoneName, parkingSpaceData) {
         return `<div class="report-table-row">
             <div class="table-body-cell zone-column">
@@ -603,7 +602,6 @@
         $("#modalContainer3").html(createSuccessModal(message));
         $("#modalContainer3").css({ "display": "flex", "justify-content": "center" });
     }
-
     function hideErrorModal() {
         $("#modalContainer2").css("display", "none");
     }
