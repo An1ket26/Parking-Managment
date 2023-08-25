@@ -74,3 +74,139 @@ System.Threading.ThreadAbortException: Thread was being aborted.
    at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 121
 ==============================================================
 
+==============================================================
+25-08-2023 16:52:45
+Current UserId = 0
+Thread was being aborted.
+
+line 19
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at ParkingManagement.Web.Auth.Page_Init(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 19
+==============================================================
+
+==============================================================
+25-08-2023 16:53:34
+Current UserId = 1
+Thread was being aborted.
+
+line 23
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at ParkingManagement.Web.Auth.Page_Init(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 23
+==============================================================
+
+==============================================================
+25-08-2023 17:10:36
+Current UserId = 0
+Thread was being aborted.
+
+line 32
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at ParkingManagement.Web.Auth.Page_Init(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 32
+==============================================================
+
+==============================================================
+25-08-2023 17:10:36
+Current UserId = 0
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+User Id does not exist to check booking Agent
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Exception: User Id does not exist to check booking Agent
+   at ParkingManagement.DataAccess.UserData.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\UserData.cs:line 49
+   at ParkingManagement.Business.UserBusiness.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\UserBusiness.cs:line 32
+   at ParkingManagement.Web.Auth.IsUserBookingAgent() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 56
+   at ParkingManagement.Web.Dashboard.Page_Load(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 23
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+25-08-2023 17:11:19
+Current UserId = 0
+Thread was being aborted.
+
+line 32
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at ParkingManagement.Web.Auth.Page_Init(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 32
+==============================================================
+
+==============================================================
+25-08-2023 17:11:21
+Current UserId = 0
+Exception of type 'System.Web.HttpUnhandledException' was thrown.
+User Id does not exist to check booking Agent
+
+cPoint)
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Exception: User Id does not exist to check booking Agent
+   at ParkingManagement.DataAccess.UserData.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.DataAccess\UserData.cs:line 49
+   at ParkingManagement.Business.UserBusiness.IsUserBookingAgent(Int32 userId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Business\UserBusiness.cs:line 32
+   at ParkingManagement.Web.Auth.IsUserBookingAgent() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 56
+   at ParkingManagement.Web.Dashboard.Page_Load(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 23
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.dashboard_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+==============================================================
+
+==============================================================
+25-08-2023 17:12:17
+Current UserId = 0
+Thread was being aborted.
+
+line 19
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at ParkingManagement.Web.Auth.Page_Init(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 19
+==============================================================
+
+==============================================================
+25-08-2023 17:21:39
+Current UserId = 2
+Thread was being aborted.
+
+line 32
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at ParkingManagement.Web.Auth.Page_Init(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 32
+==============================================================
+

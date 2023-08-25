@@ -17,6 +17,7 @@ namespace ParkingManagement.Web
                 {
                     ClearSession();
                     Response.Redirect("loginpage");
+                    
                 }
                 if (Request.QueryString["tab"] != null && Request.QueryString["tab"] == "reports" && IsUserBookingAgent() == "true")
                 {

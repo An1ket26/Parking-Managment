@@ -34,7 +34,7 @@
         $("#zonesDiv").removeClass("display-none")
         $(this).addClass("navbarActiveBtns");
         $("#navbarReportBtn").removeClass("navbarActiveBtns");
-
+        document.title = "DashBoard";
     })
 
     $("#bottomNavbar").on('click', "#navbarReportBtn", function () {
@@ -43,7 +43,7 @@
         $("#zonesDiv").addClass("display-none")
         $(this).addClass("navbarActiveBtns");
         $("#navbarDashboardBtn").removeClass("navbarActiveBtns");
-
+        document.title = "Reports"
     })
 
 
@@ -519,8 +519,9 @@
         $("#modalContainer").css({ "display": "flex", "justify-content": "center" });
     })
 
-    function createReportsTemplate(zoneName, parkingSpaceData) {
-        return `<div class="report-table-row">
+    function createReportsTemplate(zoneName, parkingSpaceData, classNameOfRowColor ) {
+
+        return `<div class="report-table-row ${classNameOfRowColor}">
             <div class="table-body-cell zone-column">
                 ${zoneName}
             </div>
@@ -537,19 +538,25 @@
     }
 
     function populateReportTable(reportData) {
+        var classNameArray = ["table-row-color1","table-row-color2"];
         $("#reportTableBody").html("");
         if (reportData.length == 0) {
             $("#tableErrorText").html("No Vehicles Parked on this day");
             return;
         }
         $("#tableErrorText").html("");
+        var j = 0;
         for (var item of reportData) {
             var i = 0;
+            var classNameOfRowColor = "";
             for (var item2 of item.ParkingSpaceList) {
-                if (i === 0)
-                    $("#reportTableBody").append(createReportsTemplate("Zone " + item.ZoneName, item2));
+                if (i === 0) {
+                    classNameOfRowColor = classNameArray[j];
+                    j = (j + 1) % 2;
+                    $("#reportTableBody").append(createReportsTemplate("Zone " + item.ZoneName, item2, classNameOfRowColor));
+                }
                 else
-                    $("#reportTableBody").append(createReportsTemplate("", item2));
+                    $("#reportTableBody").append(createReportsTemplate("", item2, classNameOfRowColor));
                 i++;
             }
         }
