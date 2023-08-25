@@ -1,0 +1,50 @@
+25-08-2023 12:29:56
+==============================================================
+Current UserId = 0
+Trying to access data without login
+
+line 47System.Exception: Trying to access data without login
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 47
+
+==============================================================
+
+==============================================================
+25-08-2023 12:30:19
+Current UserId = 0
+Trying to access data without login
+
+line 47
+System.Exception: Trying to access data without login
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 47
+==============================================================
+
+==============================================================
+25-08-2023 12:30:25
+Current UserId = 0
+Trying to access data without login
+
+line 47
+System.Exception: Trying to access data without login
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 47
+==============================================================
+
+==============================================================
+25-08-2023 12:31:08
+Current UserId = 0
+Trying to access data without login
+
+line 47
+System.Exception: Trying to access data without login
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 47
+==============================================================
+
+==============================================================
+25-08-2023 12:31:15
+Current UserId = 0
+Trying to access data without login
+
+line 47
+System.Exception: Trying to access data without login
+   at ParkingManagement.Web.Dashboard.GetParkingSpaceDetailsByZone(String zoneId) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 47
+==============================================================
+

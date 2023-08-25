@@ -321,6 +321,7 @@
         if (zoneId != 0)
             getParkingSpaceDetailsByZone(zoneId);
     })
+
     $("#initializeBtn").on('click', function () {
         $("#modalContainer").html("");
         $("#modalContainer").html(createInitializeModalTemplate());
@@ -337,7 +338,7 @@
             contentType: "application/json; charset=utf-8",
             success: function (data) {
                 if (data.d == null) {
-                    //confirm modal
+                
                     hideLoadingBar();
                     showErrorModal("something went wrong please try again")
                 } else {
@@ -373,7 +374,7 @@
     $("#parkingSpaceDiv").on('click', '#parkingSlotDiv button', function () {
         $("#modalContainer").html("");
         if ($(this).attr("bookedId") != null) {
-            //ajax call
+           
             var vehicleParkingId = $(this).attr("bookedId")
             var registrationNumber = $(this).attr("registrationNo");
             var slotName = $(this).attr("slotTitle");
@@ -484,7 +485,6 @@
         $("#modalContainer").css("display", "none");
     })
 
-
     $("#modalContainer").on('click', "#logoutYesBtn", function () {
         //ajax to release slot
         showLoadingBar();
@@ -495,10 +495,10 @@
             contentType: "application/json; charset=utf-8",
             success: function (data) {
                 if (data.d == null) {
-                    //confirm modal
+                    
                     hideLoadingBar();
                     showErrorModal("something went wrong please try again");
-                    //alert("something went wrong please try again")
+                   
                 } else {
                     window.location.href = "loginpage";
                     hideLoadingBar();
@@ -512,7 +512,6 @@
         })
         $("#modalContainer").css("display", "none");
     })
-
 
     $("#logoutBtn").on('click', function () {
 
@@ -557,7 +556,7 @@
         }
     }
 
-    function GenerateReport(date) {
+    function generateReport(date) {
         showLoadingBar();
         $.ajax({
             type: "POST",
@@ -566,7 +565,7 @@
             contentType: "application/json; charset=utf-8",
             success: function (data) {
                 if (data.d == null) {
-                    //confirm modal
+                   
                     hideLoadingBar();
                     showErrorModal("something went wrong please try again")
 
@@ -591,10 +590,8 @@
     $("#reportDateInput").on('change', function () {
         $("#extractToPdfBtn").removeClass("display-none");
         $("#extractToPdfBtn").attr("inputDate", $(this).val());
-        GenerateReport($(this).val());
+        generateReport($(this).val());
     })
-
-
 
     function showErrorModal(message) {
         $("#modalContainer2").html("");
@@ -629,11 +626,8 @@
 
     }, 10000);
 
-
-
     // Initial calls
     checkUserRole();
     getUserName();
     getAllZones();
 })
-
