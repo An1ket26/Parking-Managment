@@ -210,3 +210,14 @@ System.Threading.ThreadAbortException: Thread was being aborted.
    at ParkingManagement.Web.Auth.Page_Init(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Auth.cs:line 32
 ==============================================================
 
+==============================================================
+25-08-2023 18:09:07
+Current UserId = 0
+Trying to access data without login
+
+ine 157
+System.Exception: Trying to access data without login
+   at ParkingManagement.Web.Dashboard.CheckCurrentUserAuth() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 246
+   at ParkingManagement.Web.Dashboard.GetDetailsOfAllZones() in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\Dashboard.aspx.cs:line 157
+==============================================================
+

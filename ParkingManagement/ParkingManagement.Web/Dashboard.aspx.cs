@@ -40,7 +40,8 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if(CommonAuthClass.GetCurrentUserId()==0)
+                CheckCurrentUserAuth();
+                if (CommonAuthClass.GetCurrentUserId()==0)
                 {
                     throw new Exception("Trying to access data without login");
                 }
@@ -58,11 +59,9 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if (CommonAuthClass.GetCurrentUserId() == 0)
-                {
-                    throw new Exception("Trying to access data without login");
-                }
-                
+                CheckCurrentUserAuth();
+
+
                 if (IsUserBookingAgent() == "false")
                 {
                     throw new Exception("other user is trying to use Release Slot feature");
@@ -82,10 +81,7 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if (CommonAuthClass.GetCurrentUserId() == 0)
-                {
-                    throw new Exception("Trying to access data without login");
-                }
+                CheckCurrentUserAuth();
                 if (IsUserBookingAgent() == "false")
                 {
                     throw new Exception("other user is trying to use Release Slot feature");
@@ -108,10 +104,7 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if (CommonAuthClass.GetCurrentUserId() == 0)
-                {
-                    throw new Exception("Trying to access data without login");
-                }
+                CheckCurrentUserAuth();
                 return VehicleParkingBusiness.GetVehicleDetailsById(int.Parse(vehicleParkingId));
             }
             catch (Exception ex)
@@ -126,10 +119,7 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if (CommonAuthClass.GetCurrentUserId() == 0)
-                {
-                    throw new Exception("Trying to access data without login");
-                }
+                CheckCurrentUserAuth();
                 return VehicleParkingBusiness.GetDetailsOfVechileInSpaceId(int.Parse(parkingSpaceId));
             }
             catch (Exception ex)
@@ -144,10 +134,7 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if (CommonAuthClass.GetCurrentUserId() == 0)
-                {
-                    throw new Exception("Trying to access data without login");
-                }
+                CheckCurrentUserAuth();
                 if (IsUserBookingAgent() == "false")
                 {
                     throw new Exception("other user is trying to use Release Slot feature");
@@ -167,10 +154,7 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if (CommonAuthClass.GetCurrentUserId() == 0)
-                {
-                    throw new Exception("Trying to access data without login");
-                }
+                CheckCurrentUserAuth();
                 return ParkingZoneBusiness.GetDetailsOfAllZones();
             }
             catch (Exception ex)
@@ -185,10 +169,7 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if (CommonAuthClass.GetCurrentUserId() == 0)
-                {
-                    throw new Exception("Trying to access data without login");
-                }
+                CheckCurrentUserAuth();
                 return VehicleParkingBusiness.GenerateReports(date);
             }
             catch (Exception ex)
@@ -203,10 +184,7 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if (CommonAuthClass.GetCurrentUserId() == 0)
-                {
-                    throw new Exception("Trying to access data without login");
-                }
+                CheckCurrentUserAuth();
                 return IsUserBookingAgent();
             }
             catch (Exception ex)
@@ -221,10 +199,7 @@ namespace ParkingManagement.Web
         {
             try
             {
-                if (CommonAuthClass.GetCurrentUserId() == 0)
-                {
-                    throw new Exception("Trying to access data without login");
-                }
+                CheckCurrentUserAuth();
                 return UserBusiness.GetUserName(CommonAuthClass.GetCurrentUserId());
             }
             catch (Exception ex)
@@ -259,6 +234,14 @@ namespace ParkingManagement.Web
             {
                 LogRecords.LogRecord(ex);
                 return path;
+            }
+        }
+
+        public static void CheckCurrentUserAuth()
+        {
+            if (CommonAuthClass.GetCurrentUserId() == 0)
+            {
+                throw new Exception("Trying to access data without login");
             }
         }
     }
