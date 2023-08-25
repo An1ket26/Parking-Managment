@@ -11,22 +11,28 @@ namespace ParkingManagement.Web
     {
         protected void Page_Init(object sender, EventArgs e)
         {
-            if (CommonAuthClass.GetCurrentUserId()==0)
+            try
             {
-                ClearSession();
-                Response.Redirect("loginpage");
-            }
-            if (Request.QueryString["tab"]!=null && Request.QueryString["tab"]=="reports" && IsUserBookingAgent()=="true")
+                if (CommonAuthClass.GetCurrentUserId() == 0)
+                {
+                    ClearSession();
+                    Response.Redirect("loginpage");
+                }
+                if (Request.QueryString["tab"] != null && Request.QueryString["tab"] == "reports" && IsUserBookingAgent() == "true")
+                {
+                    Response.Redirect("dashboard?tab=dashboard");
+                }
+                if (Request.QueryString["tab"] != null && Request.QueryString["tab"] != "dashboard" && IsUserBookingAgent() == "true")
+                {
+                    Response.Redirect("dashboard?tab=dashboard");
+                }
+                if (Request.QueryString["tab"] == null)
+                {
+                    Response.Redirect("dashboard?tab=dashboard");
+                }
+            }catch(Exception ex)
             {
-                Response.Redirect("dashboard?tab=dashboard");
-            }
-            if (Request.QueryString["tab"] != null && Request.QueryString["tab"] != "dashboard" && IsUserBookingAgent() == "true")
-            {
-                Response.Redirect("dashboard?tab=dashboard");
-            }
-            if(Request.QueryString["tab"] == null)
-            {
-                Response.Redirect("dashboard?tab=dashboard");
+                LogRecords.LogRecord(ex);
             }
         }
 

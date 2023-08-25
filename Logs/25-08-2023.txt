@@ -61,3 +61,16 @@ System.Threading.ThreadAbortException: Thread was being aborted.
    at ParkingManagement.Web.StaticFilePathDecrypter.ProcessRequest(HttpContext context) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\StaticFilePathDecrypter.ashx.cs:line 46
 ==============================================================
 
+==============================================================
+25-08-2023 16:38:05
+Current UserId = 2
+Thread was being aborted.
+
+line 121
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at ParkingManagement.Web.ReportsUserControl.GeneratePdf(Object sender, EventArgs e) in D:\Projects\ParkingManagementSystem\ParkingManagement\ParkingManagement.Web\ReportsUserControl.ascx.cs:line 121
+==============================================================
+

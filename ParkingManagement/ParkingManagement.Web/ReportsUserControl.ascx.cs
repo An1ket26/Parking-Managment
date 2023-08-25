@@ -118,7 +118,7 @@ namespace ParkingManagement.Web
                     Response.AddHeader("Content-Disposition", "attachment; filename=Reports.pdf");
                     Response.BinaryWrite(memoryStream.ToArray());
                     Response.Flush();
-                    Response.End();
+                    HttpContext.Current.ApplicationInstance.CompleteRequest();
                 }
             }
             catch (Exception ex)
